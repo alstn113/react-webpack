@@ -1,12 +1,12 @@
 import {
   IPostCreateRequest,
   IPostUpdateRequest,
-} from "../interfaces/post.interface";
-import apiClient from "./apiClient";
+} from '../interfaces/post.interface';
+import apiClient from './apiClient';
 
 const PostAPI = {
   getPosts: async () => {
-    const { data } = await apiClient.get("/post");
+    const { data } = await apiClient.get('/post');
     return data;
   },
   getPost: async (id: string) => {
@@ -14,7 +14,7 @@ const PostAPI = {
     return data;
   },
   createPost: async (input: IPostCreateRequest) => {
-    const { data } = await apiClient.post("/post", input);
+    const { data } = await apiClient.post('/post', input);
     return data;
   },
   deletePost: async (id: string) => {

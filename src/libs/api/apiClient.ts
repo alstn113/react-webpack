@@ -1,5 +1,5 @@
-import { PROPERTIES } from "@/constants/properties";
-import axios from "axios";
+import { PROPERTIES } from '@/constants/properties';
+import axios from 'axios';
 
 const apiClient = axios.create({
   baseURL: PROPERTIES.BASE_URL,

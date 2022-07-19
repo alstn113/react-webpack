@@ -1,21 +1,21 @@
-import PostAPI from "@/libs/api/post.api";
+import PostAPI from '@/libs/api/post.api';
 import {
   IPost,
   ICustomAxiosError,
   IPostUpdateRequest,
-} from "@/libs/interfaces";
-import { UseMutationOptions, useMutation } from "@tanstack/react-query";
+} from '@/libs/interfaces';
+import { UseMutationOptions, useMutation } from '@tanstack/react-query';
 
 const useUpdatePost = (
   id: string,
   options?: Omit<
     UseMutationOptions<IPost, ICustomAxiosError, IPostUpdateRequest>,
-    "mutationFn"
-  >
+    'mutationFn'
+  >,
 ) => {
   return useMutation<IPost, ICustomAxiosError, IPostUpdateRequest>(
     PostAPI.updatePost(id),
-    options
+    options,
   );
 };
 
