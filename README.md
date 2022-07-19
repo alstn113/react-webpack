@@ -25,4 +25,4 @@
     yarn add zustand immer
 
     <비동기 처리, 캐싱>
-    yarn add @tanstack/react-query axios
+    yarn add @tanstack/react-query axios @tanstack/react-query-devtools

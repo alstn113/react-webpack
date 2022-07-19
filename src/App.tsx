@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "@/pages/Home/Home";
 import NotFound from "@/pages/NotFound/NotFound";
-import About from "@/pages/About/About";
+import Post from "@/pages/Post/Post";
 import Counter from "@/pages/Counter/Counter";
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
     <Routes>
       {/* public routes */}
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/post" element={<Post />} />
       <Route path="/counter" element={<Counter />} />
 
       {/* protected routes */}
