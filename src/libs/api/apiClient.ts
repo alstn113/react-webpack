@@ -1,7 +1,8 @@
+import { PROPERTIES } from "@/constants/properties";
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: "http://localhost:8080",
+  baseURL: PROPERTIES.BASE_URL,
   withCredentials: true, // use cookies
 });
 

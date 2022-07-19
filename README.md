@@ -14,7 +14,7 @@
 
     yarn add -D webpack webpack-cli webpack-dev-server webpack-merge
     yarn add -D @babel/cli @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript babel-loader
-    yarn add -D core-js css-loader css-minimizer-webpack-plugin html-webpack-plugin mini-css-extract-plugin style-loader sass sass-loader terser-webpack-plugin
+    yarn add -D core-js css-loader css-minimizer-webpack-plugin html-webpack-plugin mini-css-extract-plugin style-loader sass sass-loader terser-webpack-plugin webpack-bundle-analyzer dotenv-webpack
 
 주요 라이브러리 설치
 
