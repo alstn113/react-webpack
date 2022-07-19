@@ -26,3 +26,7 @@
 
     <비동기 처리, 캐싱>
     yarn add @tanstack/react-query axios @tanstack/react-query-devtools
+
+    <CSS>
+    yarn add @emotion/react @emotion/styled
+    yarn add -D @emotion/babel-plugin
