@@ -13,4 +13,7 @@ yarn add -D @babel/cli @babel/core @babel/preset-env @babel/preset-react @babel/
 yarn add -D core-js css-loader css-minimizer-webpack-plugin html-webpack-plugin mini-css-extract-plugin style-loader sass sass-loader terser-webpack-plugin
 
 주요 라이브러리 설치
+<페이지>
 yarn add react-router-dom
+<상태관리>
+yarn add zustand immer
