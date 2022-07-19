@@ -45,6 +45,7 @@
     "css-minimizer-webpack-plugin": "^4.0.0",
     "dotenv-webpack": "^8.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.1",
     "mini-css-extract-plugin": "^2.6.1",
     "prettier": "^2.7.1",
     "sass": "^1.53.0",

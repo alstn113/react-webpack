@@ -33,3 +33,10 @@
 
     <Storybook>
     npx sb init
+
+    <Prettier>
+    yarn add -D prettier
+
+    <Husky>
+    yarn add -D husky
+    yarn husky install
