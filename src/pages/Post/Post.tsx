@@ -1,18 +1,21 @@
+import AsyncBoundary from "@/components/AsyncBoundary";
+import ErrorFallback from "@/components/ErrorFallback/ErrorFallback";
+import { MESSAGE } from "@/constants/messages";
 import useGetPosts from "@/libs/hooks/queries/post/useGetPosts";
+import PostContent from "./PostContent/PostContent";
 
 const Post = () => {
-  const { data, isLoading, error } = useGetPosts({
-    onSuccess: (data) => console.log(data),
-  });
-
-  if (isLoading) return <div>loading...</div>;
-  if (error) return <div>error</div>;
   return (
-    <div>
-      <div>Post</div>
-      <div>THIS IS ABOUT PAGE.</div>
-      <div>{JSON.stringify(data)}</div>
-    </div>
+    <AsyncBoundary
+      rejectedFallback={
+        <ErrorFallback
+          message={MESSAGE.ERROR.LOAD_DATA}
+          queryKey={useGetPosts.getKey()}
+        />
+      }
+    >
+      <PostContent />
+    </AsyncBoundary>
   );
 };
 
