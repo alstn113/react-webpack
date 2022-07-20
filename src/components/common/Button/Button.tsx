@@ -1,20 +1,22 @@
-import { ButtonHTMLAttributes } from "react";
-import * as S from "./Button.styles";
+import { ButtonHTMLAttributes } from 'react';
+import * as S from './Button.styles';
 
-interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  size?: "lg" | "md" | "sm";
+export interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
+  size?: 'lg' | 'md' | 'sm';
   children: React.ReactNode;
-  color?: "primary" | "success" | "secondary" | "warning" | "error";
+  color?: 'primary' | 'success' | 'secondary' | 'warning' | 'error';
+  shadow?: boolean;
 }
 
 const Button = ({
-  size = "md",
-  color = "primary",
+  size = 'md',
+  color = 'primary',
   children,
+  shadow = false,
   ...options
 }: Props) => {
   return (
-    <S.Container size={size} color={color} {...options}>
+    <S.Container size={size} color={color} shadow={shadow} {...options}>
       {children}
     </S.Container>
   );

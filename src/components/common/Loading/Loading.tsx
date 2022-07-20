@@ -1,5 +1,9 @@
-const LoadingSpinner = () => {
-  return <div>LoadingSpinner...</div>;
+import * as S from './Loading.styles';
+
+export interface Props {}
+
+const Loading = ({}: Props) => {
+  return <S.Spinner />;
 };
 
-export default LoadingSpinner;
+export default Loading;

@@ -1,17 +1,17 @@
-import Button from "./Button";
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import Button, { Props } from './Button';
 
 export default {
-  title: "components/common/Button",
+  title: 'components/common/Button',
   component: Button,
-  argTypes: {},
-};
+} as ComponentMeta<typeof Button>;
 
-export const Default = () => (
-  <div>
-    <Button color="primary">버튼</Button>
-    <Button color="secondary">버튼</Button>
-    <Button color="error">버튼</Button>
-    <Button color="success">버튼</Button>
-    <Button color="warning">버튼</Button>
-  </div>
+const Template: ComponentStory<typeof Button> = (args: Props) => (
+  <Button {...args} />
 );
+
+export const Default = Template.bind({});
+
+Default.args = {
+  children: '버튼',
+};
