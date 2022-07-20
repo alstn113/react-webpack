@@ -1,9 +1,10 @@
+import { NormalColorType } from '@/styles/shared';
 import { forwardRef, InputHTMLAttributes } from 'react';
 import * as S from './Toggle.styles';
 
 export interface Props extends InputHTMLAttributes<HTMLInputElement> {
   labelText?: string;
-  color?: 'primary' | 'success' | 'secondary' | 'warning' | 'error';
+  color?: NormalColorType;
 }
 
 const Toggle = forwardRef<HTMLInputElement, Props>(

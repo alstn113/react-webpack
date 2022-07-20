@@ -1,10 +1,11 @@
+import { NormalColorType, NormalSizeType } from '@/styles/shared';
 import { ButtonHTMLAttributes } from 'react';
 import * as S from './Button.styles';
 
 export interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  size?: 'lg' | 'md' | 'sm';
+  size?: NormalSizeType;
   children: React.ReactNode;
-  color?: 'primary' | 'success' | 'secondary' | 'warning' | 'error';
+  color?: NormalColorType;
   shadow?: boolean;
 }
 

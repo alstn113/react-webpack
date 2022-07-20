@@ -1,9 +1,10 @@
+import { NormalColorType, NormalSizeType } from '@/styles/shared';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
 export const Container = styled.button<{
-  size: 'lg' | 'md' | 'sm';
-  color: 'primary' | 'success' | 'secondary' | 'warning' | 'error';
+  size: NormalSizeType;
+  color: NormalColorType;
   shadow: boolean;
 }>`
   ${({ size, theme }) =>

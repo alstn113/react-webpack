@@ -1,3 +1,4 @@
+import { NormalColorType } from '@/styles/shared';
 import styled from '@emotion/styled';
 
 export const ToggleLabel = styled.label`
@@ -35,7 +36,7 @@ export const ToggleText = styled.span`
 `;
 
 export const ToggleCheckbox = styled.input<{
-  color: 'primary' | 'success' | 'secondary' | 'warning' | 'error';
+  color: NormalColorType;
 }>`
   display: none;
 
